@@ -104,7 +104,7 @@ if [ ! -f "$WRAPPER_JAR" ]; then
     echo "Couldn't find .mvn/wrapper/maven-wrapper.jar, downloading it ..."
     JAR_URL=$(grep "^wrapperUrl=" "$WRAPPER_PROPERTIES" | cut -d'=' -f2-)
     if [ -z "$JAR_URL" ]; then
-        JAR_URL="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar"
+        JAR_URL="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.3.2/maven-wrapper-3.3.2.jar"
     fi
     curl -sfLo "$WRAPPER_JAR" "$JAR_URL" || wget -q -O "$WRAPPER_JAR" "$JAR_URL"
 fi
