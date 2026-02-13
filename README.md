@@ -48,6 +48,36 @@ A API estará disponível em: **`http://localhost:8080`**
 
 ---
 
+## 🍎 Configuração e Execução no MacOS
+
+Se você está utilizando um Mac, siga estes passos específicos para garantir que o ambiente esteja correto:
+
+### 1. Verificar Versão do Java
+O projeto requer **Java 17** ou superior. No terminal, verifique sua versão:
+```bash
+java -version
+```
+*Se a versão for inferior a 17, você precisará atualizar o JDK.*
+
+### 2. Permissões de Execução
+O MacOS pode bloquear a execução do script `mvnw` por questões de segurança ou permissão. Para corrigir, execute *uma única vez* na pasta do projeto:
+```bash
+chmod +x mvnw
+```
+
+### 3. Executando o Projeto
+Para iniciar a aplicação, utilize o wrapper do Maven (não é necessário ter Maven instalado globalmente):
+```bash
+./mvnw spring-boot:run
+```
+
+### 4. Solução de Problemas Comuns
+*   **Erro "Permission denied"**: Refaça o passo 2 (`chmod +x mvnw`).
+*   **Erro "Java version warning"**: Certifique-se de que sua variável `JAVA_HOME` aponta para o JDK 17+.
+*   **Erro de Porta (8080 em uso)**: Libere a porta ou altere a configuração no `application.properties`.
+
+---
+
 ## 📖 Testando a API com Swagger UI
 
 O Swagger oferece uma interface visual completa para testar todos os endpoints. 
