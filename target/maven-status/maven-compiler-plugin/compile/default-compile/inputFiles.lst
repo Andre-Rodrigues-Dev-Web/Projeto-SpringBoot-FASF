@@ -1,0 +1,13 @@
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/config/OpenApiConfig.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/FasfApiApplication.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/dto/StudentRequestDTO.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/dto/StudentResponseDTO.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/service/StudentService.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/service/impl/StudentServiceImpl.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/controller/StudentController.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/exception/ErrorDetails.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/mapper/StudentMapper.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/exception/GlobalExceptionHandler.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/repository/StudentRepository.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/model/Student.java
+/Users/andrelaurentinorodrigues/Documents/GitHub/Projeto-SpringBoot-FASF/src/main/java/com/fasf/exception/ResourceNotFoundException.java

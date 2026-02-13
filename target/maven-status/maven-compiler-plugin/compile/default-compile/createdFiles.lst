@@ -1,0 +1,7 @@
+com/fasf/model/Student.class
+com/fasf/config/OpenApiConfig.class
+com/fasf/service/StudentService.class
+com/fasf/service/impl/StudentServiceImpl.class
+com/fasf/repository/StudentRepository.class
+com/fasf/dto/StudentRequestDTO.class
+com/fasf/FasfApiApplication.class
