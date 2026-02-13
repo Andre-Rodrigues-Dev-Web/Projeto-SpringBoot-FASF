@@ -46,6 +46,41 @@ Inicie o servidor utilizando o Wrapper do Maven:
 Aguarde o log mostrar: `Started FasfApiApplication in ... seconds`.
 A API estará disponível em: **`http://localhost:8080`**
 
+### Windows — Pré-requisitos e Configuração
+Siga estes passos no Windows para preparar e executar o projeto:
+
+- **Instalar JDK (recomendado):** instale o **Java 17 (LTS)** para máxima compatibilidade com Spring Boot 3.x. O projeto foi testado localmente com **Java 24.0.2**, mas para CI/produção recomendamos JDK 17.
+   - Baixe o OpenJDK ou Oracle JDK e instale normalmente.
+   - Configure `JAVA_HOME` apontando para a pasta do JDK (ex.: `C:\Program Files\Java\jdk-17`).
+   - Adicione `%JAVA_HOME%\bin` ao `PATH`.
+
+- **Verificar Java instalado:** no PowerShell execute:
+   ```powershell
+   java -version
+   echo $env:JAVA_HOME
+   ```
+
+- **Usar o Maven Wrapper que acompanha o projeto:** o repositório contém um helper `mvnw.cmd` para Windows. Para garantir permissões e execução correta, rode os comandos no PowerShell a partir da raiz do projeto:
+   ```powershell
+   # Compilar e executar testes
+   .\mvnw.cmd clean install
+
+   # Rodar apenas os testes
+   .\mvnw.cmd test
+
+   # Executar a aplicação
+   .\run-wrapper.bat spring-boot:run
+   ```
+
+- **Portas e URLs**
+   - Aplicação: `http://localhost:8080`
+   - Swagger UI: `http://localhost:8080/swagger-ui/index.html`
+   - H2 Console: `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:fasfdb`, user: `sa`, senha: `password`)
+
+- **Se ocorrer erro relacionado ao Actuator ou endpoints de gerenciamento:** adicione `spring-boot-starter-actuator` e habilite endpoints no `application.properties` (opção opcional — veja seção de diagnóstico abaixo).
+
+Observação: se preferir usar uma instalação do Maven em vez do wrapper, instale Maven e use `mvn clean install` normalmente.
+
 ---
 
 ## 📖 Testando a API com Swagger UI
